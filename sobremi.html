@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí - Conversaciones con Sentido</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .bg-overlay {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(5px);
+    }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    
+    .feature-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      background: rgba(255, 255, 255, 0.95);
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #E63946, #D90429);
+      color: white;
+      padding: 12px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(230, 57, 70, 0.4);
+      background: linear-gradient(135deg, #D90429, #C1121F);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: #4B5563;
+      border: 2px solid #4B5563;
+      padding: 10px 24px;
+      border-radius: 12px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    
+    .btn-secondary:hover {
+      background: #4B5563;
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    .btn-petroleo {
+      background: linear-gradient(135deg, #0f766e, #115e59);
+      color: white;
+      padding: 12px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    
+    .btn-petroleo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(15, 118, 110, 0.4);
+      background: linear-gradient(135deg, #115e59, #134e4a);
+    }
+    
+    .highlight-box {
+      background: #d1fae5;
+      border: 1px solid #a7f3d0;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.1);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Header Section -->
+  <div class="py-8 px-4">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <div class="flex justify-center space-x-4 mb-6">
+        <a href="index.html" class="btn-secondary">Inicio</a>
+        <a href="formulario.html" class="btn-primary">7 Preguntas</a>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-light text-white mb-2">
+        Conversaciones con Sentido
+      </h1>
+      <p class="text-lg text-white mb-8">
+        Sobre el Creador y el Programa
+      </p>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="py-8 px-4 fade-in">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-overlay rounded-3xl shadow-2xl p-8 md:p-12 hero-gradient border border-white border-opacity-20">
+        
+        <!-- Foto y Presentación - CON INSTAGRAM AGREGADO -->
+        <div class="text-center mb-12">
+          <img src="https://i.ibb.co/d469SKxX/IMG-20201023-161442-1.jpg" 
+               alt="Hemir Angel Ochoa Ruiz" 
+               class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+          <h2 class="text-2xl md:text-3xl font-light text-white mb-2">
+            HEMIR ANGEL OCHOA RUIZ
+          </h2>
+          <p class="text-white text-lg mb-2">
+            Creador de Conversaciones con Sentido
+          </p>
+          <p class="text-green-300 font-medium">
+            @hemirochoaruiz
+          </p>
+        </div>
+
+        <!-- Sobre el Programa -->
+        <div class="feature-card rounded-2xl p-8 mb-12">
+          <h3 class="text-2xl font-light text-gray-800 mb-6 text-center">Sobre el Programa</h3>
+          <p class="text-gray-700 leading-relaxed text-lg mb-6">
+            <strong>Conversaciones con Sentido</strong> es un programa de acompañamiento terapéutico y espiritual de carácter individual o de trabajo con grupos de personas, y que consiste en tener una sesión semanal o un programa en conjunto por equipos en donde exploramos los temas o el tema que se requiera trabajar.
+          </p>
+          <p class="text-gray-700 leading-relaxed text-lg">
+            En este programa usamos varias metáforas que utilizamos como herramientas y guía, entre ellos, el <strong>Eneagrama, Coaching lúdico, Deep Listening y Point of You</strong>.
+          </p>
+        </div>
+
+        <!-- Formación y Experiencia - CON NOMBRE AGREGADO -->
+        <div class="feature-card rounded-2xl p-8 mb-12">
+          <h3 class="text-2xl font-light text-gray-800 mb-6 text-center">
+            Formación y Experiencia de Hemir Ochoa Ruiz
+          </h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Diplomado internacional en Terapia Breve</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Estudios y facilitador de talleres de Eneagrama. Centro de Estudios Ignacianos. Santiago. Fundación Claudio Naranjo</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Estudios en Psicoterapia y Terapia Transpersonal</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Mindfulness en situación de Crisis, Centro de Estudios Superiores de Teología de Brasil</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Meditación. Diferentes Centros de Especialidad, y con diferentes maestros</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Principios del Coach de Vida. Instructor Rodrigo Garrido de Liderazgo Integral</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Diplomado en Coaching lúdico, Maximize</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">•</span>
+              <span class="text-gray-700">Licenciatura en teología, Pontificia Universidad Católica de Valparaíso</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publicaciones -->
+        <div class="feature-card rounded-2xl p-8">
+          <h3 class="text-2xl font-light text-gray-800 mb-6 text-center">Publicaciones</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">📚</span>
+              <span class="text-gray-700">"Hebreo Bíblico, una guía para curiosos" (2012)</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">📚</span>
+              <span class="text-gray-700">"Núaj" (2019)</span>
+            </div>
+            <div class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">🎵</span>
+              <span class="text-gray-700">Compositor de música instrumental</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12 pt-8 border-t border-gray-200">
+          <h3 class="text-xl font-light text-white mb-4">¿Listo para comenzar tu proceso?</h3>
+          <div class="space-x-4">
+            <a href="formulario.html" class="btn-primary">
+              Comenzar con las 7 Preguntas
+            </a>
+            <a href="index.html" class="btn-secondary">
+              Volver al Inicio
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-overlay border-t border-gray-200 py-8 px-4 mt-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-white">
+        &copy; 2024 Conversaciones con Sentido. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
